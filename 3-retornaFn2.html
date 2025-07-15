@@ -1,0 +1,16 @@
+<script>
+	function operaciones(op) {
+		switch (op) {
+			case "suma":
+				return (a, b) => a + b
+			case "resta":
+				return (a, b) => a - b
+			default:
+				return "ARGUMENTO INVÁLIDO"
+		}
+	}
+
+	let suma = operaciones("suma")
+	console.log(suma(2, 6))
+	console.log(operaciones("resta")(10, 5))
+</script>

@@ -1,0 +1,72 @@
+<script>
+	const style =
+		"color: #ff69b4; background-color: black; padding: 5px 9px; border-radius: 50%; font-weight: bolder"
+
+	/* PASAR VALOR EN INVOCACIÓN */
+
+	function one(param) {
+		return param
+	}
+
+	console.log(one(4))
+	/* console.log("%c1", style, one(4)) */
+
+	/* PASAR EXPRESIÓN EN INVOCACIÓN */
+
+	/* 	function two(param) {
+		return param
+	}
+
+	console.log("%c2", style, two(4 + 5)) */
+
+	/* PASAR VARIABLE EN INVOCACIÓN */
+
+	/* 	let letter = "A"
+
+	function three(param) {
+		return param
+	}
+
+	console.log("%c3", style, three(letter)) */
+
+	/* PASAR FUNCIÓN INVOCADA EN INVOCACIÓN */
+
+	/* 	function input() {
+		return "FUNCTION AS VALUE"
+	}
+
+	function four(param) {
+		return param
+	}
+
+	console.log("%c4", style, four(input())) */
+
+	/* PASAR FIRMA DE LA FUNCIÓN EN INVOCACIÓN */
+
+	/* function input() {
+		return 2
+	}
+
+	console.log("5PRE", input)
+
+	function five(param) {
+		console.log(5, param)
+		return param()
+	}
+
+	console.log("%c5", style, five(input)) */
+
+	/* PASAR FUNCIÓN Y VALORES A FUNCIÓN EN INVOCACIÓN */
+
+	/* 	function sum(a, b) {
+		return a + b
+	}
+
+	function six(fn, a, b) {
+		return fn(a, b)
+	}
+
+	console.log("%c6", style, six(sum, 34, 66)) */
+
+	/* CÓMO PODRÍAMOS SIMPLIFICAR EL CONSOLE.LOG CON STYLES CON LO APREHENDIDO? */
+</script>
